@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_js#11-12(Resig tmpl)</title>
+    <link rel="stylesheet" href="css/form.style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/resig.tmpl.js"></script>
+    <script src="js/tmpl.script.js"></script>
+</head>
+
+<body>
+    <script type="text/html" id="content-template">
+        <div class="wrapper">
+            <div class="header">
+                <h1><%= fio %></h1>
+                <img class="photo" src="<%= img %>" alt="Profile photo">
+            </div>
+            <div class="content">
+                <p><%=occupation%></p>
+                <hr>
+                <h4>Хочу изучать фронтенд, потому что:</h4>
+                <ul>
+                    <% for(var i=0; i<motivation.length; i++) { %>
+                    <li><span><%= motivation[i] %></span></li>
+                    <% }; %>
+                </ul>
+                <hr>
+                <h4>Мой контактный телефон:</h4>
+                <p class="contact"><%= phone %></p>
+                <h4>Мой профиль Вконтаке:</h4>
+                <p class="contact"><a href="#"><%= profile %></a></p>
+                <hr>
+                <h4>Мой фидбек:</h4>
+                <p class="contact"><%= fidback %></p>
+            </div>
+        </div>
+    </script>
+</body>
+
+</html>

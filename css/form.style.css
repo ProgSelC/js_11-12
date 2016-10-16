@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    color: #1f1f1f;
+    font-family: "Myriad Pro",sans-serif;
+}
+
+body p:first-child {
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+}
+
+.photo {
+    height: 200px;
+    border: 1px solid #8f8f8f;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.contact {
+    margin-left: 30px;
+    color: #000;
+    font-size: 13px;
+}
+
+.contact a {
+    color: #0056d3;
+    font-style: italic;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul li span {
+    color: #3a3a3a;
+    font-size: 12px;
+}
