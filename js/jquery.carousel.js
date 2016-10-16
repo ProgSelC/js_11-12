@@ -21,7 +21,7 @@
 
         leftUIEl.click(function() {
             if (currentLeftValue != maximumOffset) {
-                currentLeftValue += 125;
+                currentLeftValue += pixelsOffset;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
             } else if (settings.circular) {
                 currentLeftValue = minimumOffset;
@@ -31,7 +31,7 @@
 
         rightUIEl.click(function() {
             if (currentLeftValue != minimumOffset) {
-                currentLeftValue -= 125;
+                currentLeftValue -= pixelsOffset;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
             } else if (settings.circular) {
                 currentLeftValue = maximumOffset;
