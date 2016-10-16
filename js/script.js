@@ -1,3 +1,3 @@
 $(function() {
-    $('.carousel').carousel({cicrcular: true});
+    $('.carousel').carousel({circular: true});
 });

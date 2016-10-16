@@ -2,7 +2,7 @@
     $.fn.carousel = function(options) {
         var defaults = {
             pixelsOffset: 125,
-            cicrcular: false
+            circular: false
         }
 
         var settings = $.extend(defaults, options);
@@ -23,7 +23,7 @@
             if (currentLeftValue != maximumOffset) {
                 currentLeftValue += 125;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
-            } else if (settings.cicrcular) {
+            } else if (settings.circular) {
                 currentLeftValue = minimumOffset;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
             }
@@ -33,7 +33,7 @@
             if (currentLeftValue != minimumOffset) {
                 currentLeftValue -= 125;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
-            } else if (settings.cicrcular) {
+            } else if (settings.circular) {
                 currentLeftValue = maximumOffset;
                 elementsList.animate({ left : currentLeftValue + "px"}, 500);
             }
